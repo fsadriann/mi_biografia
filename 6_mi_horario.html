@@ -56,10 +56,10 @@ section::after {
 
 /* Style the footer */
 footer {
-    background-color: #777;
+    background-color: lightgray;
     padding: 10px;
     text-align: center;
-    color: white;
+    color: black;
     }
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
@@ -72,14 +72,18 @@ footer {
 
 td, th {
     border: 3px solid #dddddd;
-    text-align: left;
+    text-align: center;
     padding: 8px;
 }
 
-tr:nth-child(even) {
+td, th {
     background-color: #dddddd;
 }
 
+th, td {
+    border: 1px solid gray;
+    border-radius: 10px;
+}
     </style>
 </head>
 <body>
@@ -92,8 +96,6 @@ tr:nth-child(even) {
             <ul>
                 <li><h2 class="texto">Menú</h2></li>
                 <li><p class="texto"><a style="color: darkolivegreen;" href="http://127.0.0.1:5500/index.html">Inicio</a></p></li>
-                <li> <p class="texto"><a style="color: darkolivegreen;" href="http://127.0.0.1:5500/1_nacimiento.html">Nacimiento</a></li></p>
-                <li><p class="texto"><a style="color: darkolivegreen;" href="http://127.0.0.1:5500/1_nacimiento.html">Nacimiento</a></p></li>
                 <li><p class="texto"><a style="color: darkolivegreen;" href="http://127.0.0.1:5500/2_familia.html">Mi Familia</a></p></li>
                 <li><p class="texto"><a style="color: darkolivegreen;" href="http://127.0.0.1:5500/3_educacion.html">Mi Educación</a></p></li>
                 <li><p class="texto"><a style="color: darkolivegreen;" href="http://127.0.0.1:5500/4_amigos.html">Mis Amigos</a></p></li>
@@ -104,60 +106,54 @@ tr:nth-child(even) {
             </ul>
         </nav>
         <article>
-        <table>
+        <table align="center">
             <tr>
-                <th class="texto">Lunes</th>
-                <th class="texto">Martes</th>
-                <th class="texto">Miércoles</th>
-                <th class="texto">Jueves</th>
-                <th class="texto">Viernes</th>
+                <th colspan="5" class="texto" style="background-color:rgb(169, 194, 120);text-align: center;">Mi Horario</th>
             </tr>
             <tr>
-                <th class="texto">Matemáticas</th>
-                <th class="texto">Práctica</th>
-                <th class="texto">Filosofía</th>
+                <th class="texto" style="background-color:rgb(169, 194, 120)">Lunes</th>
+                <th class="texto" style="background-color: rgb(169, 194, 120);">Martes</th>
+                <th class="texto" style="background-color: rgb(169, 194, 120);">Miércoles</th>
+                <th class="texto" style="background-color: rgb(169, 194, 120);">Jueves</th>
+                <th class="texto" style="background-color: rgb(169, 194, 120);">Viernes</th>
+            </tr>
+            <tr>
+                <th class="texto" rowspan="2">Matemáticas</th>
+                <th class="texto" rowspan="4">Práctica</th>
+                <th class="texto" rowspan="2">Filosofía</th>
                 <th class="texto">Religión</th>
+                <th class="texto" rowspan="2">Inglés</th>
+            </tr>
+            <tr>
                 <th class="texto">Inglés</th>
             </tr>
             <tr>
-                <th class="texto">Matemáticas</th>
-                <th class="texto">Práctica</th>
-                <th class="texto">Filosofía</th>
-                <th class="texto">Inglés</th>
-                <th class="texto">Inglés</th>
-            </tr>
-            <tr>
-                <th class="texto">Educación Física</th>
-                <th class="texto">Práctica</th>
+                <th class="texto" rowspan="2">Educación Física</th>
                 <th class="texto">Sociales</th>
-                <th class="texto">Matemáticas</th>
-                <th class="texto">Castellano</th>
+                <th class="texto" rowspan="2">Matemáticas</th>
+                <th class="texto" rowspan="2">Castellano</th>
             </tr>
             <tr>
-                <th class="texto">Educación Física</th>
-                <th class="texto">Práctica</th>
                 <th class="texto">Valores</th>
-                <th class="texto">Matemáticas</th>
-                <th class="texto">Castellano</th>
             </tr>
             <tr>
                 <th class="texto">Castellano</th>
                 <th class="texto">Estadística</th>
-                <th class="texto">Química</th>
-                <th class="texto">Física</th>
+                <th class="texto" rowspan="2">Química</th>
+                <th class="texto" rowspan="2">Física</th>
                 <th class="texto">Artística</th>
             </tr>
             <tr>
-                <th>Física</th>
-                <th>Química</th>
-                <th>Química</th>
-                <th>Física</th>
-                <th>Ciencias Políticas</th>
+                <th class="texto">Física</th>
+                <th class="texto">Química</th>
+                <th class="texto">Ciencias Políticas</th>
             </tr>
         </table>
         </article>
-    
     </section>
+    <footer>
+        <p class="texto">Hecho por: Adrián Felipe Forero Suárez<br>Sistemas 2024</p>
+    </footer>
 
 
 </body>
