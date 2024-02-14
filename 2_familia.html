@@ -6,21 +6,91 @@
     <title>Mi Familia</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <style>
-        .texto {
-            font-family: 'Poppins', sans-serif;
+        * {
+        box-sizing: border-box;
         }
-
-    </style>
+    
+        /* Style the header */
+    header {
+        background-color: darkolivegreen;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+        }
+    
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+        float: left;
+        width: 20%;
+        height: 500px; /* only for demonstration, should be removed */
+        background: #ccc;
+        padding: 20px;
+        }
+    
+    /* Style the list inside the menu */
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        }
+    
+    article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 500px; /* only for demonstration, should be removed */
+        }
+    
+    /* Clear floats after the columns */
+    section::after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+    
+    /* Style the footer */
+    footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        }
+    
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+        nav, article {
+        width: 100%;
+        height: auto;
+            }
+    }
+    
+            .texto {
+                font-family: 'Poppins', sans-serif;
+            }
+    
+        </style>
 </head>
 <body>
 
-    <h1 style="text-align: center;" class="texto">Mi Familia</h1>
-    <hr>
+    <header style="text-align: center;" class="texto">
+        Mi Familia
+    </header>
 
-    <h2 class="texto"><b>Menú</b></h2>
-
-    <p class="texto"><a href="http://127.0.0.1:5500/index.html">Inicio</a></p>
-
+    <section>
+        <nav>
+            <ul>
+                <li><h2 class="texto">Contenidos</h2></li>
+                <li><p class="texto"><a style="color: darkolivegreen;" href="http://127.0.0.1:5500/2_familia.html">Mi Familia</a></p></li>
+                <li><p class="texto"><a style="color: darkolivegreen;" href="http://127.0.0.1:5500/3_educacion.html">Mi Educación</a></p></li>
+                <li><p class="texto"><a style="color: darkolivegreen;" href="http://127.0.0.1:5500/4_amigos.html">Mis Amigos</a></p></li>
+                <li><p class="texto"><a style="color: darkolivegreen;" href="http://127.0.0.1:5500/5_hobbies.html">Mis Hobbies</a></p></li>
+                <li><p class="texto"><a style="color: darkolivegreen;" href="http://127.0.0.1:5500/6_mi_horario.html">Mi Horario</a></p></li>
+                <li><p class="texto"><a style="color: darkolivegreen;" href="http://127.0.0.1:5500/7_saber11.html">Saber 11</a></p></li>
+                <li><p class="texto"><a style="color: darkolivegreen;" href="http://127.0.0.1:5500/8_proyecto_vida.html">Proyecto de vida</a></p></li>
+            </ul>
+        </nav>
+    </section>
 
 
 </body>
